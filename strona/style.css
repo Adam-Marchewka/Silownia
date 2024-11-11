@@ -2,3 +2,7 @@ body{
     color: white;
     background-color: rgb(15, 45, 13);
 }
+
+#marginTop{
+    margin-top: 8%;
+}
