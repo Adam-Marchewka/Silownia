@@ -6,9 +6,10 @@
     <title>Siłownia - Główna</title>
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    link
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success shadow-lg">
         <div class="container">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">
@@ -28,7 +29,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Szukaj" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                        <button class="btn btn-outline-dark" type="submit">Szukaj</button>
                     </form>
                 </div>
             </div>
@@ -36,20 +37,20 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 p-4">
+            <div class="col-sm-4 p-4 border-end border-success">
                 <form>
                     <h4>Dodaj sprzęt treningowy:</h4>
                     <div class="mb-3">
                         <label for="firma" class="form-label">Firma:</label>
-                        <input type="text" id="firma" class="form-control">
+                        <input type="text" id="firma" class="form-control border-success">
                     </div>
                     <div class="mb-3">
                         <label for="nazwa" class="form-label">Nazwa sprzętu:</label>
-                        <input type="text" id="nazwa" class="form-control">
+                        <input type="text" id="nazwa" class="form-control border-success">
                     </div>
                     <div class="mb-3">
                         <label for="typ" class="form-label">Typ sprzęty:</label>
-                        <select id="typ" class="form-select" aria-label="Default select example">
+                        <select id="typ" class="form-select border-success" aria-label="Default select example">
                             <option selected>Wybierz typ</option>
                             <option value="1">Maszyny siłowe</option>
                             <option value="2">Wolne ciężary</option>
@@ -63,10 +64,14 @@
                             <option value="10">Skrzynie</option>
                         </select>
                     </div>
-                    <a href="#">Prześlij</a>
+                    <a class="btn btn-outline-success" href="#">Prześlij</a>
                 </form>
             </div>
-            <div class="col-sm-8 p-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem id, pariatur odio aut tempore suscipit modi, iusto ullam cumque natus unde earum culpa sint corporis necessitatibus ab? Officiis, molestias.</div>
+            <div class="col-sm-8 p-5 border-start border-success">
+                <h3 class="text-center">Lorem, ipsum.</h3><br>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem id, pariatur odio aut tempore suscipit modi, iusto ullam cumque natus unde earum culpa sint corporis necessitatibus ab? Officiis, molestias.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, est dolor! Soluta distinctio rerum nesciunt tenetur. Cum quos tenetur illum assumenda, natus dolorum nisi esse id veniam? Voluptas, omnis iste.</p>
+            </div>
         </div>
     </div>
     <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
