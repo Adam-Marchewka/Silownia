@@ -1,40 +1,47 @@
-document.addEventListener('DOMContentLoaded', function (){
-    const form = document.getElementById('form-wish');
-    const dataList = document.getElementById('dataList');
+function getData(){
+    return JSON.parse(localStorage.getItem('Data')) || [];
+};
 
-    function saveData(event){
-        const name = document.getElementById('name').value;
-        const company = document.getElementById('company').value;
-        const type = document.getElementById('type').value;
-    
-        const formData = {
-            name: name,
-            company: company,
-            type: type
-        };
+function saveData(){
+    localStorage.setItem('Data', JSON.stringify(data));
+};
 
-        const savedData = JSON.parse(localStorage.getItem("formDataList")) || [];
+function addData(dane){
+    const data = getData();
+    data.push(dane);
+    saveData(data);
+};
 
-        savedData.push(formData);
+document.addEventListener('DOMContentLoaded', ()=>{
+    const dataForm = document.getElementById('form-data');
+    if(dataForm){
+        dataForm.addEventListener('submit', function(event){
+            event.preventDefault();
+            const name = document.getElementById('name');
+            const company = document.getElementById('company');
+            const type = document.getElementById('type');
 
-        localStorage.setItem('formDataList', JSON.stringify(savedData));
+            const newName = name.value.trim();
+            const newCompany = company.value.trim();
+            const newType = type.value.trim();
 
+            addWish(newName);
+            addWish(newCompany);
+            addWish(newType);
+
+            window.location.href = 'strona.html';
+        })
+    } else {
         displayData();
-
-        form.reset();
     }
+})
 
-    function displayData(){
-        const savedData = JSON.parse(localStorage.getItem('formDataList')) || [];
-        dataList.innerHTML = '';
+function displayData(){
+    const dataList = document.getElementById('dataList');
+    const data = getData();
+    dataList.innerHTML = '';
 
-        savedData.forEach((data, index) => {
-            const li = document.createElement('li');
-            li.textContent = `${index + 1}. Firma: ${data.company}, Nazwa: ${data.name}, Typ: ${data.type}`;
-            dataList.appendChild(li);
-        });
+    for(i=0; i<data.length; i++){
+        const listItem = document.getElementById('li');
     }
-
-    form.addEventListener('submit', saveData);
-    displayData();
-});
+}
