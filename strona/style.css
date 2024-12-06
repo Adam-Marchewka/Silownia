@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+
 body{
-    color: white;
-    background-color: rgb(15, 45, 13);
+    font-family: 'Work Sans';
+    color: black;
+    background-color: rgb(221, 230, 221);
 }
 
 #marginTop{
     margin-top: 8%;
+    background-color: rgb(195, 207, 195);
+}
+
+ol{
+    border: 2.5px solid black;
+    margin: 5px;
 }
