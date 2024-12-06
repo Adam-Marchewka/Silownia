@@ -4,41 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siłownia - Główna</title>
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-gray p-4">
+          <h4 class="text-body-emphasis text-dark h3">Podstrony</h4>
+          <span class="text-body-secondary">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="link-dark h5 link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="index.html">Główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link-dark h5 link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Plan zajęć</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link-dark h5 link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="wykres.html">Wykres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link-dark h5 link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Regulamin</a>
+                </li>
+            </ul>
+          </span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <div class="container">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">
-                    LOGO
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedaContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggle-icon"></span>
+                <img src="logo.png" class="navbar-brand" alt="logo" style="height: 40px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="1 1 15 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link link-light " href="#">dsa</a>
+                            <a class="nav-link link-dark link-opacity-50-hover" href="index.html">Główna</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-light" href="#">dasd</a>
+                            <a class="nav-link link-dark link-opacity-50-hover" href="#">Plan zajęć</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark link-opacity-50-hover" href="wykres.html">Wykres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark link-opacity-50-hover" href="#">Regulamin</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Szukaj" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                        <input class="form-control me-2 border border-dark" type="search" placeholder="Szukaj" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 18">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg>
+                        </button>
                     </form>
                 </div>
             </div>
-        </nav>
-        <div class="row gx-4">
-            <div class="col border p-3">col one</div>
-            <div class="col border">col two</div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="gym1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="gym2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="gym3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 p-5 h1">Witaj Trenerze.</div>
+            <div class="col-sm-4 p-4 border-end border-dark">
+                <form id="form-data">
+                    <h4>Dodaj sprzęt treningowy:</h4>
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Firma:</label>
+                        <input type="text" id="company" class="form-control border-dark" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nazwa sprzętu:</label>
+                        <input type="text" id="name" class="form-control border-dark" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="type" class="form-label">Typ sprzęty:</label>
+                        <select id="type" class="form-select border-dark" aria-label="Default select example" required>
+                            <option selected disabled>Wybierz typ</option>
+                            <option value="Maszyny siłowe">Maszyny siłowe</option>
+                            <option value="Wolne ciężary">Wolne ciężary</option>
+                            <option value="Ławki treningowe">Ławki treningowe</option>
+                            <option value="Stojaki na ciężary i klatki">Stojaki na ciężary i klatki</option>
+                            <option value="Cardio">Cardio</option>
+                            <option value="Maszyny na dolne partie ciała">Maszyny na dolne partie ciała</option>
+                            <option value="Maszyny na górne partie ciała">Maszyny na górne partie ciała</option>
+                            <option value="Piłki gimnastyczne">Piłki gimnastyczne</option>
+                            <option value="Piłki lekarskie">Piłki lekarskie</option>
+                            <option value="Skrzynie">Skrzynie</option>
+                        </select>
+                    </div>
+                    <div id="non-information"></div>
+                    <button type="submit" onclick="addData()" class="btn btn-outline-dark">Prześlij</button>
+                </form><br>
+                <a class="btn btn-outline-dark" href="strona.html">Przejdz do listy</a>
+            </div>
+            <div class="col-sm-8 p-5 border-start border-dark">
+                <h3 class="text-center">Lorem, ipsum.</h3><br>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem id, pariatur odio aut tempore suscipit modi, iusto ullam cumque natus unde earum culpa sint corporis necessitatibus ab? Officiis, molestias.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, est dolor! Soluta distinctio rerum nesciunt tenetur. Cum quos tenetur illum assumenda, natus dolorum nisi esse id veniam? Voluptas, omnis iste.</p>
+            </div>
         </div>
     </div>
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <footer id="marginTop"><br>
+        <div class="row text-center">
+            <div class="col border-end border-dark"><br>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="index.html">Główna</a>
+                </p>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="#">Plan zajęć</a>
+                </p>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="wykres.html">Wykres</a>
+                </p>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="#">Regulamin</a>
+                </p>       
+            </div>
+            <div class="col border-start border-dark"><br>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="https://github.com/Adam-Marchewka" target="_blank">GitHub
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </a>
+                </p>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="#">Facebook
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </a>
+                </p>
+                <p>
+                    <a class="link-underline link-underline-opacity-0 link-dark link-opacity-50-hover" href="#">LinkedIn
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </div><br>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
